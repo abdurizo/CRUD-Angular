@@ -11,6 +11,10 @@ const routes: Routes = [
     component: TeacherListComponent,
   },
   {
+    path: 'add',
+    component: AddEditTeacherComponent,
+  },
+  {
     path: 'edit/:id',
     component: AddEditTeacherComponent,
   },
