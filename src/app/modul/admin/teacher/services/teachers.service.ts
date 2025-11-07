@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { TeacherResponse } from '../models/teachers.model';
+import { TeacherResponse, TeacherResquest } from '../models/teachers.model';
 
 @Injectable({
   providedIn: 'root',
@@ -16,5 +16,13 @@ export class TeachersService {
   constructor(private http: HttpClient) {}
   getAll() {
     return this.http.get<TeacherResponse[]>(this.url)
+  }
+  /**
+   * 
+   * @param model 
+   * @returns 
+   */
+  add(model:TeacherResquest){
+    return this.http.post<TeacherResponse>(this.url, model)
   }
 }
