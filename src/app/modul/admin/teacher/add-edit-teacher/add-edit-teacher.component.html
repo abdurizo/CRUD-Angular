@@ -1,12 +1,17 @@
 <h2>
-  <span [routerLink]="['../']" nz-icon nzType="arrow-left" nzTheme="outline"></span>
+  <span
+    [routerLink]="['../']"
+    nz-icon
+    nzType="arrow-left"
+    nzTheme="outline"
+  ></span>
   Add Teacher
 </h2>
 <form [formGroup]="form" nz-form>
   <!-- NAME -->
   <nz-form-item>
     <nz-form-label [nzSpan]="6" nzFor="name">Name</nz-form-label>
-    <nz-form-control [nzSpan]="14">
+    <nz-form-control nzErrorTip="Required" [nzSpan]="14">
       <input
         nz-input
         name="name"
@@ -19,7 +24,7 @@
   <!-- DESCRIPTION -->
   <nz-form-item>
     <nz-form-label [nzSpan]="6" nzFor="description">Description</nz-form-label>
-    <nz-form-control [nzSpan]="14">
+    <nz-form-control nzErrorTip="Required" [nzSpan]="14">
       <input
         nz-input
         name="description"
@@ -32,7 +37,7 @@
   <!-- ADDRES -->
   <nz-form-item>
     <nz-form-label [nzSpan]="6" nzFor="addres">Addres</nz-form-label>
-    <nz-form-control [nzSpan]="14">
+    <nz-form-control nzErrorTip="Required" [nzSpan]="14">
       <input
         nz-input
         name="addres"
@@ -45,7 +50,7 @@
   <!-- DATEBIRTH -->
   <nz-form-item>
     <nz-form-label [nzSpan]="6" nzFor="dataOfBirth">DataOfBirth</nz-form-label>
-    <nz-form-control [nzSpan]="14">
+    <nz-form-control nzErrorTip="Required" [nzSpan]="14">
       <input
         nz-input
         name="dataOfBirth"
@@ -60,7 +65,7 @@
     <nz-form-label [nzSpan]="6" nzFor="dataOfRegister"
       >DataOfRegister</nz-form-label
     >
-    <nz-form-control [nzSpan]="14">
+    <nz-form-control nzErrorTip="Required" [nzSpan]="14">
       <input
         nz-input
         name="dataOfRegister"
@@ -73,7 +78,7 @@
   <!-- PHONE -->
   <nz-form-item>
     <nz-form-label [nzSpan]="6" nzFor="phone">Phone</nz-form-label>
-    <nz-form-control [nzSpan]="14">
+    <nz-form-control nzErrorTip="Required" [nzSpan]="14">
       <input
         nz-input
         name="phone"
@@ -89,6 +94,7 @@
       >E-mail</nz-form-label
     >
     <nz-form-control
+      nzErrorTip="Required"
       [nzSm]="14"
       [nzXs]="24"
       nzErrorTip="The input is not valid E-mail!"
@@ -101,7 +107,7 @@
     <nz-form-label [nzSpan]="6" nzFor="telegramUserName"
       >TelegramUserName</nz-form-label
     >
-    <nz-form-control [nzSpan]="14">
+    <nz-form-control nzErrorTip="Required" [nzSpan]="14">
       <input
         nz-input
         name="telegramUserName"
@@ -116,7 +122,7 @@
     <nz-form-label [nzSpan]="6" nzFor="specialization"
       >Specialization</nz-form-label
     >
-    <nz-form-control [nzSpan]="14">
+    <nz-form-control nzErrorTip="Required" [nzSpan]="14">
       <input
         nz-input
         name="specialization"

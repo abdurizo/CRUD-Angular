@@ -1,7 +1,7 @@
 {
   "teachers": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Haily",
       "description": "Augar",
       "addres": "P.O. BOX 85139",
@@ -13,7 +13,7 @@
       "specialization": "Business Development"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Vladamir",
       "description": "Tessier",
       "addres": "Gmünder Straße 39",
@@ -25,7 +25,7 @@
       "specialization": "Support"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Herold",
       "description": "Brownlea",
       "addres": "2220 6TH STREET",
@@ -37,7 +37,7 @@
       "specialization": "Marketing"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Townie",
       "description": "Ewence",
       "addres": "78 High Street, Gardens",
@@ -49,7 +49,7 @@
       "specialization": "Sales"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Valery",
       "description": "Onele",
       "addres": "PO BOX 10566",
@@ -61,7 +61,7 @@
       "specialization": "Accounting"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Caralie",
       "description": "Rennles",
       "addres": "Marienplatz 2-6",
@@ -73,7 +73,7 @@
       "specialization": "Training"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Timofei",
       "description": "Markie",
       "addres": "42, avenue John F. Kennedy",
@@ -85,7 +85,7 @@
       "specialization": "Legal"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Dael",
       "description": "Thumann",
       "addres": "PIAZZA FILIPPO MEDA 4",
@@ -97,7 +97,7 @@
       "specialization": "Services"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Gradeigh",
       "description": "Champneys",
       "addres": "P7-PFSC-03-H",
@@ -109,7 +109,7 @@
       "specialization": "Human Resources"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Matteo",
       "description": "Eustanch",
       "addres": "7 PROMENADE GERMAINE SABLON",
@@ -203,6 +203,30 @@
       "email": "",
       "telegramUserName": "",
       "specialization": ""
+    },
+    {
+      "id": "f870",
+      "name": "",
+      "description": "",
+      "addres": "",
+      "dataOfBirth": "",
+      "dataOfRegister": "",
+      "phone": "",
+      "email": "",
+      "telegramUserName": "",
+      "specialization": ""
+    },
+    {
+      "id": "640a",
+      "name": "Abdurizo",
+      "description": "tedt",
+      "addres": "Tash",
+      "dataOfBirth": "15.08",
+      "dataOfRegister": "07.11",
+      "phone": "+998908062991",
+      "email": "Abdontiy1998@mail.ru",
+      "telegramUserName": "@eee",
+      "specialization": "test"
     }
   ]
 }
