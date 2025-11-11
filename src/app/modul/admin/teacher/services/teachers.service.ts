@@ -25,4 +25,10 @@ export class TeachersService {
   add(model:TeacherResquest){
     return this.http.post<TeacherResponse>(this.url, model)
   }
+  /**
+   * 
+   */
+  getById(id: string) {
+  return this.http.get<TeacherResponse>(`${this.url}/${id}`);
 }
+} 

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { TeachersService } from '../services/teachers.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { TeacherResponse } from '../models/teachers.model';
 
 @Component({
   selector: 'app-add-edit-teacher',
@@ -19,10 +21,39 @@ export class AddEditTeacherComponent {
     telegramUserName: ['', Validators.required],
     specialization: ['', Validators.required],
   });
+ 
   /**
-   *
+   * 
+   * @param fb 
+   * @param $teachers 
+   * @param router 
+   * @param route 
    */
-  constructor(private fb: FormBuilder, private $teachers: TeachersService) {}
+  constructor(
+    private fb: FormBuilder,
+    private $teachers: TeachersService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {
+    const id = this.route.snapshot.params['id'];
+    if (id) {
+      $teachers.getById(id).subscribe((teacher)=>{
+        this.setFormValues(teacher);        
+      })
+    }
+  }
+  private setFormValues(model:TeacherResponse) {
+    this.form.controls.name.setValue(model.name);
+    this.form.controls.description.setValue(model.description);
+    this.form.controls.addres.setValue(model.addres);
+    this.form.controls.dataOfBirth.setValue(model.dataOfBirth);
+    this.form.controls.dataOfRegister.setValue(model.dataOfRegister);
+    this.form.controls.phone.setValue(model.phone);
+    this.form.controls.email.setValue(model.email);
+    this.form.controls.telegramUserName.setValue(model.telegramUserName);
+    this.form.controls.specialization.setValue(model.specialization);
+  }
+
   /**
    *
    */
@@ -37,6 +68,17 @@ export class AddEditTeacherComponent {
       return;
     }
     const request = this.form.getRawValue();
-    this.$teachers.add(request).subscribe();
+    this.$teachers.add(request).subscribe((teacher) => {
+      if (teacher) {
+        this.router.navigate(['../'], { relativeTo: this.route });
+        return;
+      }
+    });
+  }
+  /**
+   *
+   */
+  reset() {
+    this.form.reset();
   }
 }

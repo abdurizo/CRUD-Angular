@@ -121,103 +121,19 @@
       "specialization": "Product Management"
     },
     {
-      "id": "d86e",
+      "id": "11",
       "name": "Abdurizo",
       "description": "tedt",
       "addres": "Tash",
       "dataOfBirth": "15.08",
       "dataOfRegister": "07.11",
-      "phone": "806",
-      "email": "Abdontiy1998@mail.ru",
-      "telegramUserName": "@eee",
-      "specialization": "test"
-    },
-    {
-      "id": "03f0",
-      "name": "Abdurizo",
-      "description": "tedt",
-      "addres": "Tash",
-      "dataOfBirth": "15.08",
-      "dataOfRegister": "07.11",
-      "phone": "806",
-      "email": "Abdontiy1998@mail.ru",
-      "telegramUserName": "@eee",
-      "specialization": "test"
-    },
-    {
-      "id": "58ce",
-      "name": "Abdurizo",
-      "description": "tedt",
-      "addres": "Tash",
-      "dataOfBirth": "15.08",
-      "dataOfRegister": "07.11",
-      "phone": "806",
-      "email": "Abdontiy1998@mail.ru",
-      "telegramUserName": "@eee",
-      "specialization": "test"
-    },
-    {
-      "id": "d3ed",
-      "name": "Abdurizo",
-      "description": "tedt",
-      "addres": "Tash",
-      "dataOfBirth": "15.08",
-      "dataOfRegister": "07.11",
-      "phone": "806",
-      "email": "Abdontiy1998@mail.ru",
-      "telegramUserName": "@eee",
-      "specialization": "test"
-    },
-    {
-      "id": "9e6f",
-      "name": "Abdurizo",
-      "description": "d",
-      "addres": "f",
-      "dataOfBirth": "f",
-      "dataOfRegister": "v",
       "phone": "+998908062991",
       "email": "Abdontiy1998@mail.ru",
       "telegramUserName": " f",
-      "specialization": "f"
+      "specialization": "test"
     },
     {
-      "id": "ac54",
-      "name": "",
-      "description": "",
-      "addres": "",
-      "dataOfBirth": "",
-      "dataOfRegister": "",
-      "phone": "",
-      "email": "",
-      "telegramUserName": "",
-      "specialization": ""
-    },
-    {
-      "id": "3224",
-      "name": "",
-      "description": "",
-      "addres": "",
-      "dataOfBirth": "",
-      "dataOfRegister": "",
-      "phone": "",
-      "email": "",
-      "telegramUserName": "",
-      "specialization": ""
-    },
-    {
-      "id": "f870",
-      "name": "",
-      "description": "",
-      "addres": "",
-      "dataOfBirth": "",
-      "dataOfRegister": "",
-      "phone": "",
-      "email": "",
-      "telegramUserName": "",
-      "specialization": ""
-    },
-    {
-      "id": "640a",
+      "id": "d6e6",
       "name": "Abdurizo",
       "description": "tedt",
       "addres": "Tash",
@@ -225,7 +141,19 @@
       "dataOfRegister": "07.11",
       "phone": "+998908062991",
       "email": "Abdontiy1998@mail.ru",
-      "telegramUserName": "@eee",
+      "telegramUserName": " f",
+      "specialization": "test"
+    },
+    {
+      "id": "ec01",
+      "name": "wewer",
+      "description": "tedt",
+      "addres": "Tash",
+      "dataOfBirth": "15.08",
+      "dataOfRegister": "07.11",
+      "phone": "+998908062991",
+      "email": "ayiti@uzavtoyul.uz",
+      "telegramUserName": " f",
       "specialization": "test"
     }
   ]
