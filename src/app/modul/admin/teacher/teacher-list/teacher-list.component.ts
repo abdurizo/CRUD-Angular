@@ -21,9 +21,25 @@ export class TeacherListComponent implements OnInit {
    *
    */
   ngOnInit(): void {
+    this.getAll();
+  }
+  /**
+   * 
+   */
+  private getAll() {
     this.$teachers.getAll().subscribe((result) => {
       this.teachers = result;
     });
   }
-  
+
+  /**
+   * 
+   */
+  delete(id:number){
+    this.$teachers.delete(id).subscribe((w)=>{
+      console.log(w);
+      this.getAll()
+      
+    })
+  }
 }

@@ -15,28 +15,34 @@ export class TeachersService {
    */
   constructor(private http: HttpClient) {}
   getAll() {
-    return this.http.get<TeacherResponse[]>(this.url)
+    return this.http.get<TeacherResponse[]>(this.url);
   }
   /**
-   * 
-   * @param model 
-   * @returns 
+   *
+   * @param model
+   * @returns
    */
-  add(model:TeacherResquest){
-    return this.http.post<TeacherResponse>(this.url, model)
+  add(model: TeacherResquest) {
+    return this.http.post<TeacherResponse>(this.url, model);
   }
   /**
-   * 
-   * @param model 
-   * @returns 
+   *
+   * @param model
+   * @returns
    */
-  edit(id: number,model:TeacherResquest,){
-    return this.http.put<TeacherResponse>(`${this.url}/${id}`, model) 
+  edit(id: number, model: TeacherResquest) {
+    return this.http.put<TeacherResponse>(`${this.url}/${id}`, model);
   }
   /**
-   * 
+   *
    */
   getById(id: number) {
-  return this.http.get<TeacherResponse>(`${this.url}/${id}`);
+    return this.http.get<TeacherResponse>(`${this.url}/${id}`);
+  }
+  /**
+   *
+   */
+  delete(id: number) {
+    return this.http.delete<any>(`${this.url}/${id}`);
+  }
 }
-} 

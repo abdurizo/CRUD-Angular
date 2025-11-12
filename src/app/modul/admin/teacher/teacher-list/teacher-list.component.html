@@ -30,7 +30,7 @@
       <td>{{ data.specialization }}</td>
       <td>
         <nz-button-group>
-          <button nz-button>
+          <button nz-button (click)="delete(data.id)">
             <span nz-icon nzType="delete" nzTheme="twotone"></span>
           </button>
           <button nz-button  [routerLink]="['edit', data.id]">

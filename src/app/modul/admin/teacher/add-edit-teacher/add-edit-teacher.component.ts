@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { TeachersService } from '../services/teachers.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { TeacherResponse } from '../models/teachers.model';
+import { TeacherResponse, TeacherResquest } from '../models/teachers.model';
 
 @Component({
   selector: 'app-add-edit-teacher',
@@ -69,24 +69,21 @@ export class AddEditTeacherComponent {
    */
   submit() {
     if (this.form.invalid) {
-      Object.values(this.form.controls).forEach((control) => {
-        if (control.invalid) {
-          control.markAsDirty();
-          control.updateValueAndValidity({ onlySelf: true });
-        }
-      });
+      this.updateValueAndValidity();
       return;
     }
-    const request = this.form.getRawValue();
-
+    const request: TeacherResquest = this.form.getRawValue();
     if (this.isEdit) {
-      this.$teachers.edit(this.id, request).subscribe((teacher) => {
-        if (teacher) {
-          this.router.navigate(['../../'], { relativeTo: this.route });
-          return;
-        }
-      });
+      this.edit(request);
+      return;
     }
+    this.add(request);
+  }
+  /**
+   *
+   * @param request
+   */
+  private add(request: TeacherResquest) {
     this.$teachers.add(request).subscribe((teacher) => {
       if (teacher) {
         this.router.navigate(['../'], { relativeTo: this.route });
@@ -94,6 +91,31 @@ export class AddEditTeacherComponent {
       }
     });
   }
+  /**
+   *
+   * @param request
+   */
+  private edit(request: TeacherResquest) {
+    this.$teachers.edit(this.id, request).subscribe((teacher) => {
+      if (teacher) {
+        this.router.navigate(['../../'], { relativeTo: this.route });
+        return;
+      }
+    });
+  }
+
+  /**
+   *
+   */
+  private updateValueAndValidity() {
+    Object.values(this.form.controls).forEach((control) => {
+      if (control.invalid) {
+        control.markAsDirty();
+        control.updateValueAndValidity({ onlySelf: true });
+      }
+    });
+  }
+
   /**
    *
    */

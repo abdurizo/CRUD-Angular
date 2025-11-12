@@ -1,90 +1,6 @@
 {
   "teachers": [
     {
-      "name": "DD",
-      "description": "Augar",
-      "addres": "P.O. BOX 85139",
-      "dataOfBirth": "2/11/2025",
-      "dataOfRegister": "9/22/2025",
-      "phone": "272-471-0925",
-      "email": "haugar0@about.me",
-      "telegramUserName": "0x8ce40774c8803d34179460905d7cd6d7ce6c07a4",
-      "specialization": "Business Development",
-      "id": "1"
-    },
-    {
-      "name": "Vl",
-      "description": "Tessier",
-      "addres": "Gmünder Straße 39",
-      "dataOfBirth": "1/19/2025",
-      "dataOfRegister": "9/23/2025",
-      "phone": "498-498-3141",
-      "email": "vtessier1@icio.us",
-      "telegramUserName": "0x371339a403865172b17908617322a216f1380c14",
-      "specialization": "Support",
-      "id": "2"
-    },
-    {
-      "id": "3",
-      "name": "Herold",
-      "description": "Brownlea",
-      "addres": "2220 6TH STREET",
-      "dataOfBirth": "3/20/2025",
-      "dataOfRegister": "5/14/2025",
-      "phone": "954-568-4570",
-      "email": "hbrownlea2@nih.gov",
-      "telegramUserName": "0x3e7f439a763e8b5d1165717239dc548a980338f0",
-      "specialization": "Marketing"
-    },
-    {
-      "id": "4",
-      "name": "Townie",
-      "description": "Ewence",
-      "addres": "78 High Street, Gardens",
-      "dataOfBirth": "3/27/2025",
-      "dataOfRegister": "9/12/2025",
-      "phone": "972-762-3413",
-      "email": "tewence3@spotify.com",
-      "telegramUserName": "0x044c712e840d566b36355ef06fba9ee4b02fee8e",
-      "specialization": "Sales"
-    },
-    {
-      "id": "5",
-      "name": "Valery",
-      "description": "Onele",
-      "addres": "PO BOX 10566",
-      "dataOfBirth": "3/17/2025",
-      "dataOfRegister": "7/3/2025",
-      "phone": "882-296-6197",
-      "email": "vonele4@java.com",
-      "telegramUserName": "0x389f7041b4caef06acf80178fc6db29b9be37b65",
-      "specialization": "Accounting"
-    },
-    {
-      "id": "6",
-      "name": "Caralie",
-      "description": "Rennles",
-      "addres": "Marienplatz 2-6",
-      "dataOfBirth": "11/30/2024",
-      "dataOfRegister": "3/30/2025",
-      "phone": "761-349-6202",
-      "email": "crennles5@flickr.com",
-      "telegramUserName": "0xb6acef688298def9d5231397dbe2402e38b97497",
-      "specialization": "Training"
-    },
-    {
-      "id": "7",
-      "name": "Timofei",
-      "description": "Markie",
-      "addres": "42, avenue John F. Kennedy",
-      "dataOfBirth": "4/12/2025",
-      "dataOfRegister": "11/27/2024",
-      "phone": "742-398-3935",
-      "email": "tmarkie6@nydailynews.com",
-      "telegramUserName": "0x7a402a8fbde96f699417febde4d9120f3ae9d9e3",
-      "specialization": "Legal"
-    },
-    {
       "id": "8",
       "name": "Dael",
       "description": "Thumann",
@@ -121,8 +37,7 @@
       "specialization": "Product Management"
     },
     {
-      "id": "7579",
-      "name": "asd",
+      "name": "Dima",
       "description": "tedt",
       "addres": "Tash",
       "dataOfBirth": "15.08",
@@ -130,7 +45,8 @@
       "phone": "+998908062991",
       "email": "Abdontiy1998@mail.ru",
       "telegramUserName": "0x371339a403865172b17908617322a216f1380c14",
-      "specialization": "Support"
+      "specialization": "Support",
+      "id": "7579"
     },
     {
       "id": "7b4c",
@@ -154,6 +70,18 @@
       "phone": "498-498-3141",
       "email": "vtessier1@icio.us",
       "telegramUserName": "0x371339a403865172b17908617322a216f1380c14",
+      "specialization": "Support"
+    },
+    {
+      "id": "9242",
+      "name": "sdfsdf",
+      "description": "Augar",
+      "addres": "Gmünder Straße 39",
+      "dataOfBirth": "2/11/2025",
+      "dataOfRegister": "9/22/2025",
+      "phone": "498-498-3141",
+      "email": "usal90211@gmail.com",
+      "telegramUserName": " f",
       "specialization": "Support"
     }
   ]
