@@ -21,13 +21,24 @@ export class AddEditTeacherComponent {
     telegramUserName: ['', Validators.required],
     specialization: ['', Validators.required],
   });
- 
   /**
-   * 
-   * @param fb 
-   * @param $teachers 
-   * @param router 
-   * @param route 
+   *
+   */
+  get isEdit() {
+    return this.id > 0;
+  }
+  /**
+   *
+   */
+  get id() {
+    return Number(this.route.snapshot.params['id']);
+  }
+  /**
+   *
+   * @param fb
+   * @param $teachers
+   * @param router
+   * @param route
    */
   constructor(
     private fb: FormBuilder,
@@ -35,14 +46,13 @@ export class AddEditTeacherComponent {
     private router: Router,
     private route: ActivatedRoute
   ) {
-    const id = this.route.snapshot.params['id'];
-    if (id) {
-      $teachers.getById(id).subscribe((teacher)=>{
-        this.setFormValues(teacher);        
-      })
+    if (this.isEdit) {
+      $teachers.getById(this.id).subscribe((teacher) => {
+        this.setFormValues(teacher);
+      });
     }
   }
-  private setFormValues(model:TeacherResponse) {
+  private setFormValues(model: TeacherResponse) {
     this.form.controls.name.setValue(model.name);
     this.form.controls.description.setValue(model.description);
     this.form.controls.addres.setValue(model.addres);
@@ -57,7 +67,7 @@ export class AddEditTeacherComponent {
   /**
    *
    */
-  add() {
+  submit() {
     if (this.form.invalid) {
       Object.values(this.form.controls).forEach((control) => {
         if (control.invalid) {
@@ -68,6 +78,15 @@ export class AddEditTeacherComponent {
       return;
     }
     const request = this.form.getRawValue();
+
+    if (this.isEdit) {
+      this.$teachers.edit(this.id, request).subscribe((teacher) => {
+        if (teacher) {
+          this.router.navigate(['../../'], { relativeTo: this.route });
+          return;
+        }
+      });
+    }
     this.$teachers.add(request).subscribe((teacher) => {
       if (teacher) {
         this.router.navigate(['../'], { relativeTo: this.route });

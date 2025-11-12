@@ -33,12 +33,11 @@
           <button nz-button>
             <span nz-icon nzType="delete" nzTheme="twotone"></span>
           </button>
-          <button nz-button>
+          <button nz-button  [routerLink]="['edit', data.id]">
             <span
               nz-icon
               nzType="edit"
               nzTheme="twotone"
-              [routerLink]="['edit', data.id]"
             ></span>
           </button>
         </nz-button-group>

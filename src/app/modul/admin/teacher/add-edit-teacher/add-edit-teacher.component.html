@@ -5,7 +5,7 @@
     nzType="arrow-left"
     nzTheme="outline"
   ></span>
-  Add Teacher
+  {{ isEdit ? "Edit Teacher" : "Add Teacher  " }}
 </h2>
 <form [formGroup]="form" nz-form>
   <!-- NAME -->
@@ -132,6 +132,8 @@
       />
     </nz-form-control>
   </nz-form-item>
-  <button nz-button nzType="primary" (click)="add()">Add</button>
+  <button nz-button nzType="primary" (click)="submit()">
+    {{ isEdit ? "Edit " : "Add" }}
+  </button>
   <button nz-button nzType="primary" (click)="reset()" nzDanger>Cansel</button>
 </form>

@@ -1,8 +1,7 @@
 {
   "teachers": [
     {
-      "id": "1",
-      "name": "Haily",
+      "name": "DD",
       "description": "Augar",
       "addres": "P.O. BOX 85139",
       "dataOfBirth": "2/11/2025",
@@ -10,11 +9,11 @@
       "phone": "272-471-0925",
       "email": "haugar0@about.me",
       "telegramUserName": "0x8ce40774c8803d34179460905d7cd6d7ce6c07a4",
-      "specialization": "Business Development"
+      "specialization": "Business Development",
+      "id": "1"
     },
     {
-      "id": "2",
-      "name": "Vladamir",
+      "name": "Vl",
       "description": "Tessier",
       "addres": "Gmünder Straße 39",
       "dataOfBirth": "1/19/2025",
@@ -22,7 +21,8 @@
       "phone": "498-498-3141",
       "email": "vtessier1@icio.us",
       "telegramUserName": "0x371339a403865172b17908617322a216f1380c14",
-      "specialization": "Support"
+      "specialization": "Support",
+      "id": "2"
     },
     {
       "id": "3",
@@ -121,40 +121,40 @@
       "specialization": "Product Management"
     },
     {
-      "id": "11",
-      "name": "Abdurizo",
+      "id": "7579",
+      "name": "asd",
       "description": "tedt",
       "addres": "Tash",
       "dataOfBirth": "15.08",
-      "dataOfRegister": "07.11",
+      "dataOfRegister": "9/23/2025",
       "phone": "+998908062991",
       "email": "Abdontiy1998@mail.ru",
-      "telegramUserName": " f",
-      "specialization": "test"
+      "telegramUserName": "0x371339a403865172b17908617322a216f1380c14",
+      "specialization": "Support"
     },
     {
-      "id": "d6e6",
-      "name": "Abdurizo",
-      "description": "tedt",
-      "addres": "Tash",
-      "dataOfBirth": "15.08",
-      "dataOfRegister": "07.11",
-      "phone": "+998908062991",
-      "email": "Abdontiy1998@mail.ru",
-      "telegramUserName": " f",
-      "specialization": "test"
+      "id": "7b4c",
+      "name": "DD",
+      "description": "Augar",
+      "addres": "P.O. BOX 85139",
+      "dataOfBirth": "2/11/2025",
+      "dataOfRegister": "9/22/2025",
+      "phone": "272-471-0925",
+      "email": "haugar0@about.me",
+      "telegramUserName": "0x8ce40774c8803d34179460905d7cd6d7ce6c07a4",
+      "specialization": "Business Development"
     },
     {
-      "id": "ec01",
-      "name": "wewer",
-      "description": "tedt",
-      "addres": "Tash",
-      "dataOfBirth": "15.08",
-      "dataOfRegister": "07.11",
-      "phone": "+998908062991",
-      "email": "ayiti@uzavtoyul.uz",
-      "telegramUserName": " f",
-      "specialization": "test"
+      "id": "08a7",
+      "name": "Vl",
+      "description": "Tessier",
+      "addres": "Gmünder Straße 39",
+      "dataOfBirth": "1/19/2025",
+      "dataOfRegister": "9/23/2025",
+      "phone": "498-498-3141",
+      "email": "vtessier1@icio.us",
+      "telegramUserName": "0x371339a403865172b17908617322a216f1380c14",
+      "specialization": "Support"
     }
   ]
 }

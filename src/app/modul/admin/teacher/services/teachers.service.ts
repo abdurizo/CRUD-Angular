@@ -27,8 +27,16 @@ export class TeachersService {
   }
   /**
    * 
+   * @param model 
+   * @returns 
    */
-  getById(id: string) {
+  edit(id: number,model:TeacherResquest,){
+    return this.http.put<TeacherResponse>(`${this.url}/${id}`, model) 
+  }
+  /**
+   * 
+   */
+  getById(id: number) {
   return this.http.get<TeacherResponse>(`${this.url}/${id}`);
 }
 } 
