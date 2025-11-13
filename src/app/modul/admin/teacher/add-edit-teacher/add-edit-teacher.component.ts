@@ -69,52 +69,71 @@ export class AddEditTeacherComponent {
    */
   submit() {
     if (this.form.invalid) {
-      this.updateValueAndValidity();
+       Object.values(this.form.controls).forEach((control) => {
+      if (control.invalid) {
+        control.markAsDirty();
+        control.updateValueAndValidity({ onlySelf: true });
+      }
+    });
+      // this.updateValueAndValidity();
       return;
     }
     const request: TeacherResquest = this.form.getRawValue();
     if (this.isEdit) {
-      this.edit(request);
-      return;
+       this.$teachers.edit(this.id, request).subscribe((teacher) => {
+      if (teacher) {
+        this.router.navigate(['../../'], { relativeTo: this.route });
+        return;
+      }
+    });
+      // this.edit(request);
+      // return;
     }
-    this.add(request);
-  }
-  /**
-   *
-   * @param request
-   */
-  private add(request: TeacherResquest) {
-    this.$teachers.add(request).subscribe((teacher) => {
+    // this.add(request);
+     this.$teachers.add(request).subscribe((teacher) => {
       if (teacher) {
         this.router.navigate(['../'], { relativeTo: this.route });
         return;
       }
     });
   }
+  
   /**
    *
    * @param request
    */
-  private edit(request: TeacherResquest) {
-    this.$teachers.edit(this.id, request).subscribe((teacher) => {
-      if (teacher) {
-        this.router.navigate(['../../'], { relativeTo: this.route });
-        return;
-      }
-    });
-  }
+  // private edit(request: TeacherResquest) {
+  //   this.$teachers.edit(this.id, request).subscribe((teacher) => {
+  //     if (teacher) {
+  //       this.router.navigate(['../../'], { relativeTo: this.route });
+  //       return;
+  //     }
+  //   });
+  // }
+  /**
+   *
+   * @param request
+   */
+  // private add(request: TeacherResquest) {
+  //   this.$teachers.add(request).subscribe((teacher) => {
+  //     if (teacher) {
+  //       this.router.navigate(['../'], { relativeTo: this.route });
+  //       return;
+  //     }
+  //   });
+  // }
 
   /**
    *
    */
-  private updateValueAndValidity() {
-    Object.values(this.form.controls).forEach((control) => {
-      if (control.invalid) {
-        control.markAsDirty();
-        control.updateValueAndValidity({ onlySelf: true });
-      }
-    });
-  }
+  // private updateValueAndValidity() {
+  //   Object.values(this.form.controls).forEach((control) => {
+  //     if (control.invalid) {
+  //       control.markAsDirty();
+  //       control.updateValueAndValidity({ onlySelf: true });
+  //     }
+  //   });
+  // }
 
   /**
    *

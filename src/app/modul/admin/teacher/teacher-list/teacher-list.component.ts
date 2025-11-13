@@ -37,7 +37,7 @@ export class TeacherListComponent implements OnInit {
    */
   delete(id:number){
     this.$teachers.delete(id).subscribe((w)=>{
-      console.log(w);
+      
       this.getAll()
       
     })

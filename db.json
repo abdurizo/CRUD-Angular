@@ -1,88 +1,28 @@
 {
   "teachers": [
     {
-      "id": "8",
-      "name": "Dael",
-      "description": "Thumann",
-      "addres": "PIAZZA FILIPPO MEDA 4",
-      "dataOfBirth": "1/8/2025",
-      "dataOfRegister": "7/9/2025",
-      "phone": "552-633-1855",
-      "email": "dthumann7@mac.com",
-      "telegramUserName": "0x99ad0cc8f24dc3c35d161045054757dfd3aaa0cd",
-      "specialization": "Services"
+      "name": "test",
+      "description": "test2",
+      "addres": "test2",
+      "dataOfBirth": "test2",
+      "dataOfRegister": "test2",
+      "phone": "test2",
+      "email": "test2",
+      "telegramUserName": "м",
+      "specialization": "м",
+      "id": "1"
     },
     {
-      "id": "9",
-      "name": "Gradeigh",
-      "description": "Champneys",
-      "addres": "P7-PFSC-03-H",
-      "dataOfBirth": "1/13/2025",
-      "dataOfRegister": "10/30/2025",
-      "phone": "948-880-3367",
-      "email": "gchampneys8@uiuc.edu",
-      "telegramUserName": "0x1351c27a067794786d00363bbee91b6b10973525",
-      "specialization": "Human Resources"
-    },
-    {
-      "id": "10",
-      "name": "Matteo",
-      "description": "Eustanch",
-      "addres": "7 PROMENADE GERMAINE SABLON",
-      "dataOfBirth": "5/30/2025",
-      "dataOfRegister": "7/7/2025",
-      "phone": "220-648-3947",
-      "email": "meustanch9@storify.com",
-      "telegramUserName": "0xb162ec9014b801bb8a53ddec5a0536dfd7ba2dfa",
-      "specialization": "Product Management"
-    },
-    {
-      "name": "Dima",
-      "description": "tedt",
-      "addres": "Tash",
-      "dataOfBirth": "15.08",
-      "dataOfRegister": "9/23/2025",
-      "phone": "+998908062991",
-      "email": "Abdontiy1998@mail.ru",
-      "telegramUserName": "0x371339a403865172b17908617322a216f1380c14",
-      "specialization": "Support",
-      "id": "7579"
-    },
-    {
-      "id": "7b4c",
-      "name": "DD",
-      "description": "Augar",
-      "addres": "P.O. BOX 85139",
-      "dataOfBirth": "2/11/2025",
-      "dataOfRegister": "9/22/2025",
-      "phone": "272-471-0925",
-      "email": "haugar0@about.me",
-      "telegramUserName": "0x8ce40774c8803d34179460905d7cd6d7ce6c07a4",
-      "specialization": "Business Development"
-    },
-    {
-      "id": "08a7",
-      "name": "Vl",
-      "description": "Tessier",
-      "addres": "Gmünder Straße 39",
-      "dataOfBirth": "1/19/2025",
-      "dataOfRegister": "9/23/2025",
-      "phone": "498-498-3141",
-      "email": "vtessier1@icio.us",
-      "telegramUserName": "0x371339a403865172b17908617322a216f1380c14",
-      "specialization": "Support"
-    },
-    {
-      "id": "9242",
-      "name": "sdfsdf",
-      "description": "Augar",
-      "addres": "Gmünder Straße 39",
-      "dataOfBirth": "2/11/2025",
-      "dataOfRegister": "9/22/2025",
-      "phone": "498-498-3141",
-      "email": "usal90211@gmail.com",
-      "telegramUserName": " f",
-      "specialization": "Support"
+      "id": "7d5d",
+      "name": "test",
+      "description": "test2",
+      "addres": "test2",
+      "dataOfBirth": "test2",
+      "dataOfRegister": "test2",
+      "phone": "test2",
+      "email": "test2",
+      "telegramUserName": "м",
+      "specialization": "м"
     }
   ]
 }
